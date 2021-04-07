@@ -9,6 +9,10 @@ inputs:
     description: 'Custom glob to overwrite which files to lint.'
     required: false
     default: 'src'
+  custom-path:
+    description: 'Custom path where node modules are installed.'
+    required: false
+    default: ''
 runs:
   using: 'node12'
   main: 'dist/index.js'

@@ -25,6 +25,7 @@ jobs:
       uses: icrawl/action-eslint@v1
       with:
         custom-glob: apps # only if a different glob is needed, default: src
+        custom-glob: static # only if a different path is needed, default is the root directory
 ```
 
 ## Contributing
