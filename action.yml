@@ -1,9 +1,9 @@
-name: 'ESLint (JS/TS) Action '
+name: 'ESLint (JS/TS) Action with custom node_modules path'
 description: 'Lints JavaScript/TypeScript code.'
-author: 'iCrawl'
+author: 'lmiguelgato'
 branding:
   icon: check-circle
-  color: yellow
+  color: orange
 inputs:
   custom-glob:
     description: 'Custom glob to overwrite which files to lint.'
@@ -14,5 +14,5 @@ inputs:
     required: false
     default: ''
 runs:
-  using: 'node12'
+  using: 'node15'
   main: 'dist/index.js'
