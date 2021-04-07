@@ -1,5 +1,5 @@
 # action-eslint
-> TypeScript/JavaScript ESLint [action](https://github.com/features/actions)
+> TypeScript/JavaScript ESLint with custom path [action](https://github.com/features/actions)
 
 ## Usage
 
@@ -22,7 +22,7 @@ jobs:
     - name: yarn install
       run: yarn install
     - name: eslint
-      uses: icrawl/action-eslint@v1
+      uses: lmiguelgato/action-eslint@v1
       with:
         custom-glob: apps # only if a different glob is needed, default: src
         custom-glob: static # only if a different path is needed, default is the root directory
@@ -37,8 +37,7 @@ jobs:
 5. Submit a pull request :D
 
 ## Author
+Originally authored by:
+**action-eslint** © [iCrawl](https://github.com/iCrawl)
 
-**action-eslint** © [iCrawl](https://github.com/iCrawl)  
-Authored and maintained by iCrawl.
-
-> GitHub [@iCrawl](https://github.com/iCrawl) · Twitter [@iCrawlToGo](https://twitter.com/iCrawlToGo)
+This version is maintained by [lmiguelgato](https://github.com/lmiguelgato).
