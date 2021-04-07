@@ -21,8 +21,8 @@ jobs:
         node-version: 12
     - name: yarn install
       run: yarn install
-    - name: eslint
-      uses: lmiguelgato/action-eslint@v1
+    - name: ESLint (JS/TS) Action with custom node_modules path
+      uses: lmiguelgato/action-eslint@v1.9.2-beta
       with:
         custom-glob: apps # only if a different glob is needed, default: src
         custom-path: static # only if a different path is needed, default is the root directory
